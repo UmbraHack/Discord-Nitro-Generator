@@ -20,14 +20,15 @@ import time
 # Any unauthorized tampering may cause issues or break functionality.
 # ---------------------------------------------------------------
 
+messagebox.showwarning(
+            "⚠️ WARNING",
+            "This tool is protected.\n\nDo not modify the code unless you fully understand what you're doing.\n\nUnauthorized modification may break the tool or violate terms."
+        )
+
 class NitroGenerator:
     def __init__(self, root):
         self.root = root
 
-        messagebox.showwarning(
-            "⚠️ WARNING",
-            "This tool is protected.\n\nDo not modify the code unless you fully understand what you're doing.\n\nUnauthorized modification may break the tool or violate terms."
-        )
         self.root.title("Discord Nitro Generator - CODED BY @UmbraHack")
         self.root.geometry("600x400")
         self.root.configure(bg="#1C2526")
